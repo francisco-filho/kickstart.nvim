@@ -282,6 +282,15 @@ require('lazy').setup({
       }
     end,
   },
+  {
+    'NeogitOrg/neogit',
+    dependencies = {
+      'nvim-lua/plenary.nvim',
+      'sindrets/diffview.nvim',
+      -- Only one of these is needed.
+      'nvim-telescope/telescope.nvim',
+    },
+  },
   --
   -- Here is a more advanced example where we pass configuration
   -- options to `gitsigns.nvim`.
